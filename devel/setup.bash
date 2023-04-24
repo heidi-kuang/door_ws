@@ -1,0 +1,1 @@
+/root/projects/door_ws/devel/.private/catkin_tools_prebuild/setup.bash

@@ -1000,6 +1000,33 @@ src/LaserConverter.cpp.s:
 	$(MAKE) -f CMakeFiles/laser_converter.dir/build.make CMakeFiles/laser_converter.dir/src/LaserConverter.cpp.s
 .PHONY : src/LaserConverter.cpp.s
 
+src/LocationParser.o: src/LocationParser.cpp.o
+
+.PHONY : src/LocationParser.o
+
+# target to build an object file
+src/LocationParser.cpp.o:
+	$(MAKE) -f CMakeFiles/robot_driver.dir/build.make CMakeFiles/robot_driver.dir/src/LocationParser.cpp.o
+.PHONY : src/LocationParser.cpp.o
+
+src/LocationParser.i: src/LocationParser.cpp.i
+
+.PHONY : src/LocationParser.i
+
+# target to preprocess a source file
+src/LocationParser.cpp.i:
+	$(MAKE) -f CMakeFiles/robot_driver.dir/build.make CMakeFiles/robot_driver.dir/src/LocationParser.cpp.i
+.PHONY : src/LocationParser.cpp.i
+
+src/LocationParser.s: src/LocationParser.cpp.s
+
+.PHONY : src/LocationParser.s
+
+# target to generate assembly for a file
+src/LocationParser.cpp.s:
+	$(MAKE) -f CMakeFiles/robot_driver.dir/build.make CMakeFiles/robot_driver.dir/src/LocationParser.cpp.s
+.PHONY : src/LocationParser.cpp.s
+
 src/RobotDriver.o: src/RobotDriver.cpp.o
 
 .PHONY : src/RobotDriver.o
@@ -1159,6 +1186,9 @@ help:
 	@echo "... src/LaserConverter.o"
 	@echo "... src/LaserConverter.i"
 	@echo "... src/LaserConverter.s"
+	@echo "... src/LocationParser.o"
+	@echo "... src/LocationParser.i"
+	@echo "... src/LocationParser.s"
 	@echo "... src/RobotDriver.o"
 	@echo "... src/RobotDriver.i"
 	@echo "... src/RobotDriver.s"

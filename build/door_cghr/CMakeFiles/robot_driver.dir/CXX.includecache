@@ -1428,6 +1428,18 @@ vector
 time.h
 -
 
+/root/projects/door_ws/src/door_cghr/include/door_cghr/LocationParser.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+move_base_msgs/MoveBaseAction.h
+-
+
 /root/projects/door_ws/src/door_cghr/include/door_cghr/RobotDriver.h
 ros/ros.h
 -
@@ -1440,6 +1452,12 @@ tf2_ros/transform_listener.h
 geometry_msgs/TransformStamped.h
 -
 string
+-
+
+/root/projects/door_ws/src/door_cghr/src/LocationParser.cpp
+door_cghr/LocationParser.h
+/root/projects/door_ws/src/door_cghr/src/door_cghr/LocationParser.h
+ros/ros.h
 -
 
 /root/projects/door_ws/src/door_cghr/src/RobotDriver.cpp
@@ -1455,4 +1473,6 @@ string
 -
 ros/ros.h
 /root/projects/door_ws/src/door_cghr/src/ros/ros.h
+door_cghr/LocationParser.h
+/root/projects/door_ws/src/door_cghr/src/door_cghr/LocationParser.h
 

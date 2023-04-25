@@ -1,5 +1,5 @@
 [35m[1mScanning dependencies of target robot_driver[0m
-[ 42%] Built target laser_converter
-[ 57%] [32mBuilding CXX object CMakeFiles/robot_driver.dir/src/run_RobotDriver.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/robot_driver.dir/src/run_RobotDriver.cpp.o[0m
+[ 57%] Built target laser_converter
 [ 71%] [32m[1mLinking CXX executable /root/projects/door_ws/devel/.private/door_cghr/lib/door_cghr/robot_driver[0m
 [100%] Built target robot_driver

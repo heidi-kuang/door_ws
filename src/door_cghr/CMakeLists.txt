@@ -145,6 +145,7 @@ add_executable(laser_converter
 add_executable(robot_driver
   src/RobotDriver.cpp 
   src/run_RobotDriver.cpp
+  src/LocationParser.cpp
 ) 
 
 ## Rename C++ executable without prefix

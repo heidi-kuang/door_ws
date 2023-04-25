@@ -1,0 +1,12 @@
+[01m[K/root/projects/door_ws/src/door_cghr/src/LocationParser.cpp:[m[K In member function '[01m[Kstd::vector<move_base_msgs::MoveBaseGoal_<std::allocator<void> > > LocationParser::getLocations()[m[K':
+[01m[K/root/projects/door_ws/src/door_cghr/src/LocationParser.cpp:20:12:[m[K [01;31m[Kerror: [m[K'[01m[Knull[m[K' was not declared in this scope
+     return [01;31m[Knull[m[K;
+            [01;31m[K^~~~[m[K
+[01m[K/root/projects/door_ws/src/door_cghr/src/LocationParser.cpp:20:12:[m[K [01;36m[Knote: [m[Ksuggested alternative: '[01m[Knanl[m[K'
+     return [01;36m[Knull[m[K;
+            [01;36m[K^~~~[m[K
+            [32m[Knanl[m[K
+make[2]: *** [CMakeFiles/robot_driver.dir/src/LocationParser.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/robot_driver.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target laser_converter[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/laser_converter.dir/src/run_LaserConverter.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/laser_converter.dir/src/LaserConverter.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /root/projects/door_ws/devel/.private/door_cghr/lib/door_cghr/laser_converter[0m
+[100%] Built target laser_converter

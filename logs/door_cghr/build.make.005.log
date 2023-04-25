@@ -1,0 +1,15 @@
+[35m[1mScanning dependencies of target robot_driver[0m
+[ 50%] Built target laser_converter
+[ 66%] [32mBuilding CXX object CMakeFiles/robot_driver.dir/src/run_RobotDriver.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/robot_driver.dir/src/RobotDriver.cpp.o[0m
+[01m[K/root/projects/door_ws/src/door_cghr/src/run_RobotDriver.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kelevator_pkg/RobotDriver.h: No such file or directory
+ #include [01;31m[K<elevator_pkg/RobotDriver.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+CMakeFiles/robot_driver.dir/build.make:86: recipe for target 'CMakeFiles/robot_driver.dir/src/run_RobotDriver.cpp.o' failed
+make[2]: *** [CMakeFiles/robot_driver.dir/src/run_RobotDriver.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+CMakeFiles/Makefile2:360: recipe for target 'CMakeFiles/robot_driver.dir/all' failed
+make[1]: *** [CMakeFiles/robot_driver.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

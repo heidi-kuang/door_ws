@@ -1,0 +1,1 @@
+/root/projects/door_ws/devel/.private/door_cghr/lib/pkgconfig/door_cghr.pc

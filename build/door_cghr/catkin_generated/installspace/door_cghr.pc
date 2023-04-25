@@ -1,0 +1,8 @@
+prefix=/root/projects/door_ws/install
+
+Name: door_cghr
+Description: Description of door_cghr
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

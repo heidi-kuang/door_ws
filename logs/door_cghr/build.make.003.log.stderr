@@ -1,0 +1,17 @@
+In file included from [01m[K/root/projects/door_ws/src/door_cghr/src/run_LaserConverter.cpp:2:0[m[K:
+[01m[K/root/projects/door_ws/src/door_cghr/include/door_cghr/LaserConverter.h:17:10:[m[K [01;31m[Kerror: [m[K'[01m[KSusbscriber[m[K' in namespace '[01m[Kros[m[K' does not name a type
+     ros::[01;31m[KSusbscriber[m[K laser_subscriber_;
+          [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/root/projects/door_ws/src/door_cghr/src/LaserConverter.cpp:1:0[m[K:
+[01m[K/root/projects/door_ws/src/door_cghr/include/door_cghr/LaserConverter.h:17:10:[m[K [01;31m[Kerror: [m[K'[01m[KSusbscriber[m[K' in namespace '[01m[Kros[m[K' does not name a type
+     ros::[01;31m[KSusbscriber[m[K laser_subscriber_;
+          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/projects/door_ws/src/door_cghr/src/LaserConverter.cpp:[m[K In constructor '[01m[KLaserConverter::LaserConverter()[m[K':
+[01m[K/root/projects/door_ws/src/door_cghr/src/LaserConverter.cpp:11:2:[m[K [01;31m[Kerror: [m[K'[01m[Klaser_subscriber_[m[K' was not declared in this scope
+  [01;31m[Klaser_subscriber_[m[K = n_.subscribe<sensor_msgs::LaserScan>("/scan_filtered", 100, &LaserConverter::scanCallback, this);
+  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/laser_converter.dir/src/run_LaserConverter.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/laser_converter.dir/src/LaserConverter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/laser_converter.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,13 @@
+[01m[K/root/projects/door_ws/src/door_cghr/src/LaserConverter.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Klaser_to_point/LaserConverter.h: No such file or directory
+ #include [01;31m[K"laser_to_point/LaserConverter.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/laser_converter.dir/src/LaserConverter.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/root/projects/door_ws/src/door_cghr/src/run_LaserConverter.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kdoor_cghr/LaserConverter.h: No such file or directory
+ #include [01;31m[K"door_cghr/LaserConverter.h"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/laser_converter.dir/src/run_LaserConverter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/laser_converter.dir/all] Error 2
+make: *** [all] Error 2

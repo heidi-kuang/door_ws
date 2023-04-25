@@ -1,0 +1,3 @@
+[ 50%] [32m[1mLinking CXX executable /root/projects/door_ws/devel/.private/door_cghr/lib/door_cghr/robot_driver[0m
+[ 66%] Built target laser_converter
+[100%] Built target robot_driver

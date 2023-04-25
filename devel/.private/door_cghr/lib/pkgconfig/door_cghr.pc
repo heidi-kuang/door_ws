@@ -1,0 +1,8 @@
+prefix=/root/projects/door_ws/devel/.private/door_cghr
+
+Name: door_cghr
+Description: Description of door_cghr
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

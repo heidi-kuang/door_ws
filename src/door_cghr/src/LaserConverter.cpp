@@ -26,19 +26,75 @@ void LaserConverter::scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan_i
 	sensor_msgs::PointCloud cloud;
 	projector_.transformLaserScanToPointCloud("/base_link",*scan_in, cloud, listener_);
 
-	// list all cloud points
-	// for (int i = 0; i < RANGES_SIZE; i++) {
-	// 	ROS_INFO_STREAM("converted cloud[" << i << "] = " << cloud.points[i]);
-	// }
+	
+
+
+	// print if more than 60% are infinities
+	const int SECTOR_WIDTH = 20; // around 40 ranges = 14 degrees in front
+	double PERCENT_INF = .3;
+	int infCount = 0;
+	double ranges_sum = 0;
+	for (int i = RANGES_SIZE / 2 - SECTOR_WIDTH; i < RANGES_SIZE / 2 + SECTOR_WIDTH; i++) {
+    	// ROS_INFO_STREAM("sector: ranges[" << i << "] = " << scan_in->ranges[i] << std::endl);
+    	if (scan_in->ranges[i] > scan_in->range_max) {
+        	infCount++;
+    	}
+   	 
+	}
+
+	ROS_INFO_STREAM("percent = " << double (infCount) / (SECTOR_WIDTH * 2));
+
+	if (double (infCount) / (SECTOR_WIDTH * 2) > PERCENT_INF) {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": nothing detected");
+	} else {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": DOOR DETECTED");
+	}
+
+	PERCENT_INF = .4;
+
+	if (double (infCount) / (SECTOR_WIDTH * 2) > PERCENT_INF) {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": nothing detected");
+	} else {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": DOOR DETECTED");
+	}
+
+	PERCENT_INF = .5;
+
+	if (double (infCount) / (SECTOR_WIDTH * 2) > PERCENT_INF) {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": nothing detected");
+	} else {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": DOOR DETECTED");
+	}
+
+	PERCENT_INF = .6;
+
+	if (double (infCount) / (SECTOR_WIDTH * 2) > PERCENT_INF) {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": nothing detected");
+	} else {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": DOOR DETECTED");
+	}
+
+
+	PERCENT_INF = .7;
+
+	if (double (infCount) / (SECTOR_WIDTH * 2) > PERCENT_INF) {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": nothing detected");
+	} else {
+		ROS_INFO_STREAM("COUNTING INFS " << PERCENT_INF << ": DOOR DETECTED");
+	}
+	
+	
 
 	// print if distance < range_max at 90 degrees in front
 	const int RANGE_THRESHOLD = 3;
 	if (scan_in->ranges[RANGES_SIZE / 2] < RANGE_THRESHOLD) {
-    	ROS_INFO_STREAM(std::endl << "at 90 degrees, ranges[RANGES_SIZE/2] = " << scan_in->ranges[RANGES_SIZE/2] << "!!!!!");
-    	ROS_INFO_STREAM("OBJECT DETECTED" << std::endl);
+    	// ROS_INFO_STREAM(std::endl << "at 90 degrees, ranges[RANGES_SIZE/2] = " << scan_in->ranges[RANGES_SIZE/2] << "!!!!!");
+    	ROS_INFO_STREAM("1 READING: DOOR DETECTED");
 	} else {
-    	ROS_INFO_STREAM("Nothing detected");
+    	ROS_INFO_STREAM("1 READING: nothing detected");
 	}
+	
+	ROS_INFO_STREAM(std::endl);
 
 	// print distance directly in front
 	// ROS_INFO_STREAM("at 90 degrees, ranges[RANGES_SIZE/2] = " << scan_in->ranges[RANGES_SIZE/2]);

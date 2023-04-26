@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target robot_driver[0m
+[35m[1mScanning dependencies of target laser_converter[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/robot_driver.dir/src/LocationParser.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/laser_converter.dir/src/LaserConverter.cpp.o[0m
+[ 42%] [32m[1mLinking CXX executable /root/projects/door_ws/devel/.private/door_cghr/lib/door_cghr/robot_driver[0m
+[ 71%] Built target robot_driver
+[ 85%] [32m[1mLinking CXX executable /root/projects/door_ws/devel/.private/door_cghr/lib/door_cghr/laser_converter[0m
+[100%] Built target laser_converter
